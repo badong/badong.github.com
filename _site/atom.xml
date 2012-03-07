@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>mamonluk</title>
+ <link href="http://tom.preston-werner.com/atom.xml" rel="self"/>
+ <link href="http://tom.preston-werner.com/"/>
+ <updated>2012-03-06T12:50:20-08:00</updated>
+ <id>http://mamonluk.github.com/</id>
+ <author>
+   <name>mamonluk</name>
+   <email>mamonluk7@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>general cheatsheets</title>
+   <link href="http://tom.preston-werner.com/2012/03/09/general_cheatsheets.html"/>
+   <updated>2012-03-09T00:00:00-08:00</updated>
+   <id>http://tom.preston-werner.com/2012/03/09/general_cheatsheets</id>
+   <content type="html">&lt;p class=&quot;meta&quot;&gt;09 March 2012 - San Francisco&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;127.0.0.1&lt;/code&gt; Is the default IP address for &lt;code&gt;localhost&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>github cheatsheets</title>
+   <link href="http://tom.preston-werner.com/2012/03/08/github_cheatsheets.html"/>
+   <updated>2012-03-08T00:00:00-08:00</updated>
+   <id>http://tom.preston-werner.com/2012/03/08/github_cheatsheets</id>
+   <content type="html">&lt;p class=&quot;meta&quot;&gt;08 March 2012 - San Francisco&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git add . -A&lt;/code&gt;  When you want to push repo with deleted files, then do this&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>java thread</title>
+   <link href="http://tom.preston-werner.com/2012/03/07/java_thread.html"/>
+   <updated>2012-03-07T00:00:00-08:00</updated>
+   <id>http://tom.preston-werner.com/2012/03/07/java_thread</id>
+   <content type="html">&lt;p class=&quot;meta&quot;&gt;07 March 2012 - San Francisco&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;In Java, when creating threads, it shares a copy of the instance variable. example below&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;script src=&quot;https://gist.github.com/1988822.js&quot;&gt; &lt;/script&gt;
+
+
+
+</content>
+ </entry>
+ 
+ 
+</feed>
