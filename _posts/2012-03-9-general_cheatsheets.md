@@ -9,8 +9,8 @@ title: general cheatsheets
 Its a shortcut to creating array manually
 3. `et.setInputType(InputType.TYPE_CLASS_PHONE);`  `et.setInputType(InputType.TYPE_CLASS_TEXT)` 
 Set the input type for EditText
-4. `<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />` - if you want to write file in /sdcard 
-    in android SD card 
+4. `<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />` - add this to androidManifext.xml if 
+    you want to write file in /sdcard in android SD card 
 
 
 
