@@ -11,6 +11,12 @@ Its a shortcut to creating array manually
 Set the input type for EditText
 4. `<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />` - add this to androidManifext.xml if 
     you want to write file in /sdcard in android SD card 
+5. ###Convert integer to binary representation
+<% highlight java %}
+for(int i=0; i<32; i++)
+  sum+=( num >> i ) & 1;
+System.out.println( sum );
+<% endhighlight %>
 
 
 
