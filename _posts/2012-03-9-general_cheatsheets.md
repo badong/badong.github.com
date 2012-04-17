@@ -18,6 +18,7 @@ for(int i=0; i<32; i++)
 System.out.println( sum );
 <% endhighlight %>
 6. View if port is running a process `lsof -w -n -i tcp:8888` then you can kill the port by doing `kill [pid]`
+7. `adb shell top -m 10` - to view the CPU process for android device. Make sure device is connected to PC
 
 
 
