@@ -4,7 +4,7 @@
  <title>mamonluk</title>
  <link href="http://tom.preston-werner.com/atom.xml" rel="self"/>
  <link href="http://tom.preston-werner.com/"/>
- <updated>2012-03-06T12:50:20-08:00</updated>
+ <updated>2012-04-19T16:30:02-07:00</updated>
  <id>http://mamonluk.github.com/</id>
  <author>
    <name>mamonluk</name>
@@ -22,6 +22,22 @@
 
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;127.0.0.1&lt;/code&gt; Is the default IP address for &lt;code&gt;localhost&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android cheatsheets</title>
+   <link href="http://tom.preston-werner.com/2012/03/09/android_cheatsheets.html"/>
+   <updated>2012-03-09T00:00:00-08:00</updated>
+   <id>http://tom.preston-werner.com/2012/03/09/android_cheatsheets</id>
+   <content type="html">&lt;p class=&quot;meta&quot;&gt;09 March 2012 - San Francisco&lt;/p&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -53,7 +69,7 @@
 
 
 &lt;ul&gt;
-&lt;li&gt;In Java, when creating threads, it shares a copy of the instance variable. example below&lt;/li&gt;
+&lt;li&gt;In Java,when creating threads, it shares a copy of the instance variable. example below&lt;/li&gt;
 &lt;/ul&gt;
 
 
