@@ -14,6 +14,7 @@ title: java tips
 to use StringBuilder or StringBuffer. String Object is immutable so whenever you alter the value, another object is created
 so memory allocation needs to occur. You don't want that to happen in a game loop where you allocate memory every loop. This 
 will cause GC to run every now and then.
+
 * Use StringBuilder if only one thread is accessing it
 * Use StringBuffer if one or more thread is accessing it, StringBuffer is thread-safe
 
