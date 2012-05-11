@@ -42,10 +42,10 @@ var WRInitTime=(new Date()).getTime();
 
 
 <ol>
-<li><code>127.0.0.1</code> Is the default IP address for <code>localhost</code></li>
-<li><code>public void printf(String s, Object...args)</code> the 3 dots is call varargs. It means you can pass 0 or more arguments.
-Its a shortcut to creating array manually</li>
-<li>Convert integer to binary representation</li>
+<li><p><code>127.0.0.1</code> Is the default IP address for <code>localhost</code></p></li>
+<li><p><code>public void printf(String s, Object...args)</code> the 3 dots is call varargs. It means you can pass 0 or more arguments.
+Its a shortcut to creating array manually</p></li>
+<li><p><strong>Convert integer to binary representation</strong></p></li>
 </ol>
 
 
@@ -60,14 +60,39 @@ Its a shortcut to creating array manually</li>
 
 <div class="highlight"><pre><code class="ruby"><span class="k">for</span><span class="p">(</span><span class="n">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">32</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
   <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="n">n</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">)</span><span class="sr">      //shift left, then check (n&lt;0? &#39;1&#39; : &#39;0&#39;)</span>
-<span class="sr">   n*=2;</span>
+<span class="sr">   n*=2;          /</span><span class="o">/</span><span class="n">this</span> <span class="n">will</span> <span class="n">cause</span> <span class="n">overflow</span> 
 </code></pre>
 </div>
 
 
 <ol>
-<li>View if port is running a process <code>lsof -w -n -i tcp:8888</code> then you can kill the port by doing <code>kill [pid]</code></li>
+<li><p>View if port is running a process <code>lsof -w -n -i tcp:8888</code> then you can kill the port by doing <code>kill [pid]</code></p></li>
+<li><p><strong>Remove three larges int in an array function</strong></p></li>
 </ol>
+
+
+<div class="highlight"><pre><code class="java"><span class="c1">//@param array and size of array</span>
+<span class="kt">void</span> <span class="nf">reduce</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">[],</span> <span class="n">in</span><span class="o">&amp;</span> <span class="n">n</span><span class="o">)</span>
+<span class="o">{</span>
+    <span class="kt">int</span> <span class="n">i</span><span class="o">,</span> <span class="n">j</span><span class="o">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">3</span><span class="o">,</span> <span class="n">max</span><span class="o">;</span>
+    <span class="k">while</span><span class="o">(</span><span class="n">k</span><span class="o">--)</span>
+    <span class="o">{</span>
+        <span class="c1">//find maximum</span>
+        <span class="k">for</span><span class="o">(</span><span class="n">max</span><span class="o">=</span><span class="n">a</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">max</span><span class="o">)</span> <span class="n">max</span><span class="o">=</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+    
+        <span class="c1">//eliminate the duplicate</span>
+        <span class="k">for</span><span class="o">(</span><span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]!=</span><span class="n">max</span><span class="o">)</span> <span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">++]=</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span>   <span class="c1">//moving j++ only when a[i] is not equal to max</span>
+    
+    <span class="c1">//changing the size of array to new size</span>
+    <span class="n">n</span><span class="o">=</span><span class="n">j</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+
+
 
 
 	</div>
