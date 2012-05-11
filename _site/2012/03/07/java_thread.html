@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>java thread</title>
+   <title>java tips</title>
    <meta name="author" content="Tom Preston-Werner" />
    <link href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" />
 
@@ -34,14 +34,23 @@ var WRInitTime=(new Date()).getTime();
 <p class="meta">07 March 2012 - San Francisco</p>
 
 
-<ul>
+<ol>
 <li>In Java,when creating threads, it shares a copy of the instance variable. example below</li>
-</ul>
+</ol>
 
 
 <script src="https://gist.github.com/1988822.js"> </script>
 
 
+<ol>
+<li><p>In Java, you need to lock or synchroniz the variable that is being used by two or more threads to prevent deadlock</p></li>
+<li><p>When your program is modifying String all the time (example game logic, operations, construction of string) then you need
+to use StringBuilder or StringBuffer. String Object is immutable so whenever you alter the value, another object is created
+so memory allocation needs to occur. You don't want that to happen in a game loop where you allocate memory every loop. This
+will cause GC to run every now and then.</p></li>
+<li><p>Use StringBuilder if only one thread is accessing it</p></li>
+<li>Use StringBuffer if one or more thread is accessing it, StringBuffer is thread-safe</li>
+</ol>
 
 
 </div>
