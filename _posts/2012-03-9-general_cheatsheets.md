@@ -47,6 +47,18 @@ void reduce(int a[], in& n)
 }
 {% endhighlight %}
 
+6. The use of carat ^. This is use if you want to flip something. i.e. use in turn base. 
+{% highlight java %}
+//0 means player1 turn, 1 means player 2 turns
+int turn=0;
+turn = turn ^ 1;	//this will flip the value of turn
+{% endhighlight %}
+
+
+
+
+
+
 
                         
 
