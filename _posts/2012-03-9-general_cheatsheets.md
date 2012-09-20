@@ -55,6 +55,9 @@ turn = turn ^ 1;	//this will flip the value of turn
 {% endhighlight %}
 
 
+7.echo 'export PATH=/usr/local/mysql/bin:$PATH' >> ~/.profile
+
+
 
 
 
