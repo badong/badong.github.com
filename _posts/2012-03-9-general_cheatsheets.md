@@ -22,9 +22,9 @@ for(int i=0; i<32; i++)
  	n*=2;		   //this will cause overflow 
 {% endhighlight %}
 
-4. View if port is running a process `lsof -w -n -i tcp:8888` then you can kill the port by doing `kill [pid]`
+4.View if port is running a process `lsof -w -n -i tcp:8888` then you can kill the port by doing `kill [pid]`
 
-5. **Remove three larges int in an array function**
+5.**Remove three larges int in an array function**
 
 {% highlight java %}
 //@param array and size of array
@@ -47,7 +47,7 @@ void reduce(int a[], in& n)
 }
 {% endhighlight %}
 
-6. The use of carat ^. This is use if you want to flip something. i.e. use in turn base. 
+6.The use of carat ^. This is use if you want to flip something. i.e. use in turn base. 
 {% highlight java %}
 //0 means player1 turn, 1 means player 2 turns
 int turn=0;
