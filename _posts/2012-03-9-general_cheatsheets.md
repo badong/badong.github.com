@@ -28,18 +28,14 @@ for(int i=0; i<32; i++)
 
 **Binary to Integer
 {% highlight java %}
- int n=111;
-    int value=0;
+    int n=111;
     int sum=0;
     for(int i=0; i<32; i++)
     {
        int mod = n%10;
        if(mod==1)
           sum+= Math.pow(2, i);
-       
-     
-       n= n /10;
-           
+       n= n /10;           
     }
     System.out.println(sum);
 {% endhighlight %}
