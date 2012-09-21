@@ -20,8 +20,10 @@ System.out.println( sum );
 OR
 {% highlight ruby %}
 for(int i=0; i<32; i++)
-  cout<<(n<0)      //shift left, then check (n<0? '1' : '0')
- 	n*=2;		   //this will cause overflow 
+{      
+	System.out.print(n<0 ? '1' : '0');  //shift left, then check (n<0? '1' : '0')
+ 	n*=2;
+}//this will cause overflow 
 {% endhighlight %}
 
 4.View if port is running a process `lsof -w -n -i tcp:8888` then you can kill the port by doing `kill [pid]`
