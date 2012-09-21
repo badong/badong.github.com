@@ -75,6 +75,14 @@ turn = turn ^ 1;	//this will flip the value of turn
 
 7.echo 'export PATH=/usr/local/mysql/bin:$PATH' >> ~/.profile
 
+8. Absolute Path function Hack
+{% highlight java %}
+int n=-2;
+int mask = n>>31;
+n =(mask + n) ^ mask;
+System.out.println(n);
+{% endhighlight %}
+
 
 
 
