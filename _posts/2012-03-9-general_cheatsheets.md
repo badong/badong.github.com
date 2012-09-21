@@ -26,6 +26,23 @@ for(int i=0; i<32; i++)
 }//this will cause overflow 
 {% endhighlight %}
 
+**Binary to Integer
+{% highlight java %}
+ int n=111;
+    int value=0;
+    int sum=0;
+    for(int i=0; i<32; i++)
+    {
+       int mod = n%10;
+       if(mod==1)
+          sum+= Math.pow(2, i);
+       
+     
+       n= n /10;
+           
+    }
+    System.out.println(sum);
+{% endhighlight %}
 4.View if port is running a process `lsof -w -n -i tcp:8888` then you can kill the port by doing `kill [pid]`
 
 5.**Remove three larges int in an array function**
