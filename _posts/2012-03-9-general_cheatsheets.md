@@ -11,6 +11,7 @@ Its a shortcut to creating array manually
 
 3. **Convert integer to binary representation**
 {% highlight java %}
+//note this goes from 31 to 0, so it will loop 32 times
 for(int i=31; i>=0; i--)
 {
 sum=( num >> i ) & 1;
